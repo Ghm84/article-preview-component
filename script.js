@@ -18,13 +18,12 @@ function toggleSocialMedia() {
 
 shareIconOne.addEventListener('click', toggleSocialMedia);
 
-// Aseguramos que si el mouse sale del div de social media, se oculte
 socialMediaDiv.addEventListener('mouseout', () => {
     socialMediaDiv.classList.remove('show');
-    bottomDiv.style.display = 'flex';  // Reaparecer el bottom div
+    bottomDiv.style.display = 'flex';  
 });
 
-// Para la versión desktop: cuando el mouse está sobre el shareIconOne, mostramos el socialMediaDiv
+
 function showSocialMedia() {
     if (window.matchMedia('(min-width: 601px)').matches) {
         socialMediaDiv.classList.add('show');
