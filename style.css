@@ -199,6 +199,7 @@ p {
     body {
         padding-top: 16rem;
         padding-left: 21rem;
+        overflow: auto;
     }
 
     .card {
